@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: rebeccapurple;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding: 1rem;
+}
+
+.date::selection{
+    background-color: red;
+}
+
+.inputImg {
+    background-color: blue;
+    padding: 1rem;
+    border-radius: 50%;
+    max-width: 1rem;
+    max-height: 1rem;
+}
+
+
+.date {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.inputImg {
+    background-color: blue;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+img#userIcon {
+    width: 2.4rem;
+    border-radius: 50%;
+}
+
+.submit {
+    font-weight: bold;
+    background-color: rgb(40, 196, 40);
+    border: none;
+    padding: 9px;
+    border-radius: 1rem;
+}
+
+input {
+    font-weight: bold;
+    padding: 7px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+input:focus {
+    box-shadow: rgba(99, 2, 255, 0.88) 0px 5px 15px;
+}
+
+.delete {
+    font-weight: bold;
+    background-color: red;
+    border: none;
+    padding: 9px;
+    border-radius: 1rem;
+    max-height: 46px;
+}
+
+
+.add {
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 9px;
+    border-radius: 1rem;
+    max-height: 46px;
+}
+
+
+.edit {
+    font-weight: bold;
+    background-color: silver;
+    max-height: 46px;
+    color: white;
+    border: none;
+    padding: 9px;
+    border-radius: 1rem;
+}
+
+
+.todoContainer {
+    margin-bottom: 2rem;
+}
+
+.todos {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.todo {
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.btns {
+    display: flex;
+    gap: 9px;
+    justify-content: flex-end;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.todoTask {
+    border: 2px;
+    background: cyan;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+
+button{
+    transition: .5s;
+}
+
+button:hover{
+    box-shadow: rgba(99, 2, 255, 0.88) 0px 5px 15px;
+
+}
+
+@media(max-width:350px){
+    .date{
+        font-size: 20px;
+    }
+}
